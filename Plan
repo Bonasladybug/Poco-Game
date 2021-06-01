@@ -6,9 +6,11 @@ Plan for the game :
 >
 - Game Design Docoument
 >
-- Start Unity
+- Start Unity world game 
 >
 - Collision and Physics 
+>
+- Inventory system
 >
 - Gameplay Mechanics
 >
@@ -17,10 +19,7 @@ Plan for the game :
 * Technical
 >
 * Scenes
-* [list the different scenes/screens used in the game]
->
-#### Controls/Input
-[describe the control scheme used in the game]
+- [list the scenes/screens used in the game]
 >
 * Components/Non-Component Scripts
 - Components
