@@ -1,0 +1,35 @@
+Plan for the game :
+
+- Prototype 
+>
+- Sketches 
+>
+- Game Design Docoument
+>
+- Start Unity
+>
+- Collision and Physics 
+>
+- Gameplay Mechanics
+>
+- Level Design
+>
+* Technical
+>
+* Scenes
+* [list the different scenes/screens used in the game]
+>
+#### Controls/Input
+[describe the control scheme used in the game]
+>
+* Components/Non-Component Scripts
+- Components
+  * [list Components needed and some basic information about required implementation]
+- Non-Component Scripts
+  * [list Non-Component Script files you will need to create]
+
+---
+>
+- MVP Milestones
+>
+Day 1
