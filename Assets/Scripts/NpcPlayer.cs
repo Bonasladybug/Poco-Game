@@ -19,6 +19,9 @@ public class NpcPlayer : MonoBehaviour
     }
     void OnTriggerEnter () {
 		chat.SetActive(true);
+        
+    
+
         CollectSound.Play ();
 
 		
