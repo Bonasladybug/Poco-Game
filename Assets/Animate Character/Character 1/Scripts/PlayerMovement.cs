@@ -29,7 +29,8 @@ private void Update() {
 
     Move();
     if(Input.GetKeyDown(KeyCode.Mouse0)){
-        Attack();
+        
+        StartCoroutine(Attack());
     }
     
 }
@@ -89,8 +90,14 @@ private void Jump(){
     velocity.y= Mathf.Sqrt(jumpHeight * -2 * gravity);
 
 }
-private void Attack(){
+private IEnumerator Attack(){
+
+    anim.SetLayerWeight(anim.GetLayerIndex("Attack Layer"), 1);
     anim.SetTrigger("Attack");
+
+    yield return new WaitForSeconds(5);
+    anim.SetLayerWeight(anim.GetLayerIndex("Attack Layer"), 0);
+
 }
 }
 
