@@ -5,7 +5,7 @@ using UnityEngine;
 public class NpcPlayer : MonoBehaviour
 {
     public GameObject chat;
-    public AudioSource CollectSound;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +22,12 @@ public class NpcPlayer : MonoBehaviour
         
     
 
-        CollectSound.Play ();
+        
 
 		
     }
+
+     void OnTriggerExit () {
+		chat.SetActive(false);
+}
 }
