@@ -105,7 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6623286957857334554}
   m_Layer: 0
-  m_Name: Seeds
+  m_Name: balls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
