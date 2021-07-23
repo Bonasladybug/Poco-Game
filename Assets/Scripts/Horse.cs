@@ -18,7 +18,7 @@ public class Horse : MonoBehaviour
     void Update()
     {
         float distance = Vector3.Distance(transform.position, Player.transform.position);
-        Debug.Log("Distance: " + distance);
+        //Debug.Log("Distance: " + distance);
         // Run awat from player
         if ( distance < EnemyDistanceRun)
         {
