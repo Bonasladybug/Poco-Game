@@ -7,6 +7,10 @@ public class Inventory : MonoBehaviour
     #region Singleton
     //Simple Singleton Pattern
     public static Inventory instance;
+    public GameObject Mudarea;
+
+    public GameObject seed;
+
     
     private void Awake()
     {
@@ -47,6 +51,9 @@ public class Inventory : MonoBehaviour
     }
     public void remove(Item item)
     {
+        GameObject plant = Instantiate(seed, new Vector3(-94.14f,0.6022886f,217.6f), Mudarea.transform.rotation);
+        //plant.transform.position.x += 300;
+
         items.Remove(item);
 
         if (onItemChangedCallback != null)
