@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b9844b19da01394f8533150f805e5ec, type: 3}
-  m_Name: Donut
+  m_Name: Seeds-2
   m_EditorClassIdentifier: 
-  name: Donut
+  name: lemon
   icon: {fileID: 21300000, guid: 866d6d081419e4188bc9c9c0c5337c98, type: 3}
   isDefaultItem: 0
-  energy: 10
+  energy: 0
