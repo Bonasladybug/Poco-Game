@@ -8,9 +8,10 @@ public class Attack : NPCBaseFSM {
 
     
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex){
-     
+     HealthMonitor.HealthValue -= 1;
      base.OnStateEnter(animator, stateInfo, layerIndex);
      NPC.GetComponent<GarbageAI>().StartFiring();
+     
     }
     
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex){

@@ -10,6 +10,10 @@ public class HealthMonitor : MonoBehaviour {
 	public GameObject Heart2;
 	public GameObject Heart3;
 
+	public GameObject gameOverPart;
+
+	private bool gameOver = false;
+
 
 	void Start () {
 		HealthValue = 1;
@@ -18,7 +22,14 @@ public class HealthMonitor : MonoBehaviour {
 
 	void Update () {
 		InternalHealth = HealthValue;
-
+		// if(gameOver){
+		// 	return false;
+		// }
+		if (HealthValue == 0 && !gameOver) {
+			gameOverPart.SetActive(true);
+			Heart1.SetActive (false);
+			gameOver = true;
+		}
 		if (HealthValue == 1) {
 			Heart1.SetActive (true);
 		}

@@ -17,6 +17,6 @@ public class Rubbish : MonoBehaviour
     void Update()
     {
         var direction = opponent.transform.position - this.transform.position;
-        Debug.Log("distance" + direction.z);
+        // Debug.Log("distance" + direction.z);
     }
 }

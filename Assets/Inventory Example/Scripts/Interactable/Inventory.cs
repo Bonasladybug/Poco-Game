@@ -51,7 +51,8 @@ public class Inventory : MonoBehaviour
     }
     public void remove(Item item)
     {
-        GameObject plant = Instantiate(seed, new Vector3(-94.14f,0.6022886f,217.6f), Mudarea.transform.rotation);
+        Vector3 position = new Vector3(Mudarea.transform.position.x+195,Mudarea.transform.position.y + 1 ,Mudarea.transform.position.z-155);
+        GameObject plant = Instantiate(seed, position, Mudarea.transform.rotation);
         //plant.transform.position.x += 300;
 
         items.Remove(item);
