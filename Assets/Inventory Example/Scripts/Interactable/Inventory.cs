@@ -11,6 +11,7 @@ public class Inventory : MonoBehaviour
 
     public GameObject seed;
 
+
     
     private void Awake()
     {
@@ -53,6 +54,7 @@ public class Inventory : MonoBehaviour
     {
         Vector3 position = new Vector3(Mudarea.transform.position.x+195,Mudarea.transform.position.y + 1 ,Mudarea.transform.position.z-155);
         GameObject plant = Instantiate(seed, position, Mudarea.transform.rotation);
+        
         //plant.transform.position.x += 300;
 
         items.Remove(item);

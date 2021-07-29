@@ -9,7 +9,7 @@ public class playerController : MonoBehaviour
 {
     //Simple Singleton Pattern
     public static playerController instance;
-    public GameObject tomatoPrefab;    
+    public GameObject projectilePrefab;    
     private void Awake()
     {
         if (instance != null)
@@ -54,9 +54,9 @@ public class playerController : MonoBehaviour
             checkInteractable();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+       if (Input.GetKeyDown(KeyCode.Space))
         {
-           Instantiate(tomatoPrefab, transform.position, tomatoPrefab.transform.rotation);
+           Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
 
         if (agent.remainingDistance > agent.stoppingDistance)
