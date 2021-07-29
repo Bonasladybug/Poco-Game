@@ -8,7 +8,8 @@ using UnityStandardAssets.Characters.ThirdPerson;
 public class playerController : MonoBehaviour
 {
     //Simple Singleton Pattern
-    public static playerController instance;    
+    public static playerController instance;
+    public GameObject tomatoPrefab;    
     private void Awake()
     {
         if (instance != null)
@@ -51,6 +52,11 @@ public class playerController : MonoBehaviour
         {  
             SetAgentTarget();
             checkInteractable();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+           //Lunch a tomato from the player
         }
 
         if (agent.remainingDistance > agent.stoppingDistance)
