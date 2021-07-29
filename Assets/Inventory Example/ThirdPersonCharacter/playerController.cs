@@ -56,7 +56,7 @@ public class playerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-           //Lunch a tomato from the player
+           Instantiate(tomatoPrefab, transform.position, tomatoPrefab.transform.rotation);
         }
 
         if (agent.remainingDistance > agent.stoppingDistance)
