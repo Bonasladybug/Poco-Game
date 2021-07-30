@@ -10,8 +10,9 @@ public class MainMenu : MonoBehaviour
 
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 }
-    public void GoToMainMenu(){
+    public void Back(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        Debug.Log("gameover");
     }
     public void QuitGame(){
         Debug.Log("QUIT!");
