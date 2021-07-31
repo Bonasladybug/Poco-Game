@@ -11,7 +11,8 @@ public class Inventory : MonoBehaviour
 
     public GameObject seed;
 
-
+    public GameObject winScreen;
+    int winCounter;
     
     private void Awake()
     {
@@ -30,6 +31,17 @@ public class Inventory : MonoBehaviour
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallback;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Debug.Log("Mud " + Mudarea.gameObject.name + "MudPos" + Mudarea.gameObject.transform.position);
+        }
+        if (winCounter == 3)
+        {
+            winScreen.SetActive(true);
+        }
+    }
     public bool add (Item item)
     {
         if (!item.isDefaultItem)
@@ -51,17 +63,26 @@ public class Inventory : MonoBehaviour
         return true;
     }
     public void remove(Item item)
-    {
-        Vector3 position = new Vector3(Mudarea.transform.position.x+195,Mudarea.transform.position.y + 1 ,Mudarea.transform.position.z-155);
-        GameObject plant = Instantiate(seed, position, Mudarea.transform.rotation);
-        
-        //plant.transform.position.x += 300;
-
-        items.Remove(item);
-
-        if (onItemChangedCallback != null)
+    {       
+        if (Mudarea != null && Mudarea.GetComponent<mudPositionComponent>().isPlanted == false)
         {
-            onItemChangedCallback.Invoke();
+            Mudarea.GetComponent<mudPositionComponent>().isPlanted = true;
+            winCounter += 1;
+            //Vector3 position = new Vector3(Random.Range(Mudarea.transform.localPosition.x - .975f,  Mudarea.transform.localPosition.x + 0.975f) ,Mudarea.transform.localPosition.y, Random.Range(Mudarea.transform.localPosition.z - 0.325f, Mudarea.transform.localPosition.z + 0.325f));
+            GameObject plant = Instantiate(seed, Mudarea.transform.position, Mudarea.transform.rotation);
+
+            //plant.transform.position.x += 300;
+
+            items.Remove(item);
+
+            if (onItemChangedCallback != null)
+            {
+                onItemChangedCallback.Invoke();
+            }            
         }
+        else
+        {
+            Debug.Log("please go to mud area");
+        }        
     }
 }
