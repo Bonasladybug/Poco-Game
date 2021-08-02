@@ -24536,8 +24536,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000011027, y: -12.554}
-  m_SizeDelta: {x: 165.8335, y: 80.279}
+  m_AnchoredPosition: {x: 0.1717, y: -3.6116}
+  m_SizeDelta: {x: 165.8335, y: 97.14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &464419328
 MonoBehaviour:
@@ -24573,7 +24573,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Poco! Please destroy the big garbage bags.they ruined the village. Be careful
-    not to closer to them as they will hurt you. Press the space key on the keyboard
+    not to closer to them,they will hurt you. Press the space key on the keyboard
     to throw the mushroom balls.Then find the Rooster.
 --- !u!222 &464419329
 CanvasRenderer:
@@ -28176,8 +28176,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.17169952, y: -12.553902}
-  m_SizeDelta: {x: 110.2269, y: -29.1701}
+  m_AnchoredPosition: {x: 0.17169952, y: -3.6116}
+  m_SizeDelta: {x: 110.2269, y: -17.0131}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &543228064
 MonoBehaviour:
@@ -43028,8 +43028,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Well done, Poco! You found me. \nPlease pick up the seeds. You will use
-    them later. Go and find the Goat."
+  m_Text: "Well done, Poco! You found me. \nPlease pick up the seeds(eed,light green
+    and orange).You will use them later. Go and find the Goat."
 --- !u!222 &789353876
 CanvasRenderer:
   m_ObjectHideFlags: 0
