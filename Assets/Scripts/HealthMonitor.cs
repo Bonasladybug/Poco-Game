@@ -41,6 +41,7 @@ public class HealthMonitor : MonoBehaviour {
 		}
 		if (HealthValue == 3) {
 			Heart3.SetActive (true);
+			
 		}
 
 	}
