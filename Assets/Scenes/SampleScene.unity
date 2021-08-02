@@ -67809,7 +67809,7 @@ MonoBehaviour:
   m_Text: 'Well done Poco!
 
     Use the seeds to rebuild the village. Planting them
-    on the farm land.(Plant each in separate area)'
+    on the farm land.(Plant each in a separate area)'
 --- !u!222 &1489818950
 CanvasRenderer:
   m_ObjectHideFlags: 0
